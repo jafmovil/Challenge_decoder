@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 class="titulo">Encriptador-Desencriptador</h1>
+  <h1 class="titulo">Encriptador  -  Desencriptador</h1>
   <main class="main">
     <section class="form box">
       <form action=''>
-        <label for="input-texto">No se admiten letra mayusculas, acentos ni caracteres especiales</label>
+        <p class="texto">Escribe tú mensaje a encritar:</p>
         <input class="text-input" type="text" name="input-texto" id="input-texto" pattern="^[ a-z]+$" placeholder="Ingrese el texto aqui" > 
         <input class="btn" type="button" value="Encriptar!"  id="btn-encriptar" onclick="verificar(this)">
         <input class="btn" type="button" value="Desencriptar!" id="btn-desencriptar" onclick="verificar(this)">
@@ -31,7 +31,6 @@
   <footer>
     <p>By Javier Fernandez</p>
   </footer>
-
 
   <script src="script.js"></script>
 </body>
