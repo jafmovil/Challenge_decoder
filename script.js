@@ -5,7 +5,7 @@ function verificar(boton){
     var new_text = "";
     if (!campo.checkValidity()) 
     {
-        alert('Solo minusculas, ni acentos, ni caracteres especiales');
+        alert('Solo letras minúsculas, sin acento, sin caracteres especiales');
         document.getElementById('input-texto').focus();
     } 
     else 
@@ -64,8 +64,8 @@ function verificar(boton){
         document.execCommand('SelectAll');
         document.execCommand('copy');
     })
-        
-    }
+
+ }
       
 /* Reglas de encriptación: 
 "e" es convertido para "enter" 

@@ -8,23 +8,24 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 class="titulo">código secreto</h1>
-
+  <h1 class="titulo">Encriptador-Desencriptador</h1>
   <main class="main">
     <section class="form box">
-      <form action="">
-        <label for="input-texto">Solo letras minúsculas, sin acento</label>
-        <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui">
-        <input class="btn" type="submit" value="encriptar!" id="btn-encriptar">
-        <input class="btn" type="submit" value="desencriptar!" id="btn-desencriptar">
+      <form action=''>
+        <label for="input-texto">No se admiten letra mayusculas, acentos ni caracteres especiales</label>
+        <input class="text-input" type="text" name="input-texto" id="input-texto" pattern="^[ a-z]+$" placeholder="Ingrese el texto aqui" > 
+        <input class="btn" type="button" value="Encriptar!"  id="btn-encriptar" onclick="verificar(this)">
+        <input class="btn" type="button" value="Desencriptar!" id="btn-desencriptar" onclick="verificar(this)">
       </form>
     </section>
-  
+
     <section class="msg box">
-      <h2 id="">Mensaje encriptado:</h2>
-      <input class="text-input" type="text" id="msg"></input>
-      <input class="btn" type="submit" value="copiar" id="btn-copy">
-    </section>
+      <form name="mensaje">
+        <label>Mensaje Encriptado</label>
+        <input class="msg-input" type="text" name="msg" value ="" id="msg"></input>
+        <input class="btn" type="button" value="Copiar" id="btn-copy" onclick="copiar(this)">
+      </form>
+     </section>
   </main>
 
   <footer>
