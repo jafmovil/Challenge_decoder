@@ -20,7 +20,7 @@ body {
 .main {
   width: 80vw;
   margin: auto;
-  display: flex-direction: table-column;
+  display: flex-direction: column;
   justify-content: center;
 }
 
