@@ -19,7 +19,7 @@ body {
 .main {
   width: 80vw;
   margin: auto;
-  display: flex;
+  display: flex-direction: table-column;
   justify-content: center;
 }
 
