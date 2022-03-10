@@ -20,7 +20,7 @@ body {
 .main {
   width: 80vw;
   margin: auto;
-  display: flex-direction: column;
+  display: flex-wrap: wrap;
   justify-content: center;
 }
 
